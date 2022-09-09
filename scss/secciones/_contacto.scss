@@ -17,11 +17,11 @@
             width: 30vw;
             margin: 30px;
             padding: 10px;
-            background-color: #ade8f4;
+            background-color: rgb(168, 212, 168);
 
         }
         input:focus{
-            background-color:aqua;
+            background-color:rgb(218, 218, 218);
         }
         input[type=text]::placeholder{
             text-align:  center;

@@ -14,7 +14,7 @@ a {
 
 /*Comienzo header*/
 .main .h2-contacto {
-  background-color: brown;
+  background-color: green;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center; }
@@ -141,9 +141,9 @@ a {
       width: 30vw;
       margin: 30px;
       padding: 10px;
-      background-color: #ade8f4; }
+      background-color: #a8d4a8; }
     .main .formulario input:focus {
-      background-color: aqua; }
+      background-color: #dadada; }
     .main .formulario input[type=text]::placeholder {
       text-align: center; }
     .main .formulario input[type=number]::placeholder {
