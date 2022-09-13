@@ -3,23 +3,27 @@
     justify-content: center;
     margin: 15px;
     padding: 15px;
-    img{
+
+    img {
         width: 100%;
         height: 100%;
-    
+
 
 
     }
-    .card-title{
+
+    .card-title {
         font-size: 20px;
         text-align: center;
-        
+
     }
+
     .card-text {
         text-align: center;
         font-size: 25px;
     }
-    .card{
+
+    .card {
         margin: 2px;
     }
 
@@ -28,33 +32,43 @@
 .cartas-imagenes-dos {
     display: flex;
     justify-content: center;
-    padding-bottom: 15px;
-    img{
+    margin: 15px;
+    padding: 15px;
+
+    img {
         width: 100%;
-    height: 100%;
+        height: 100%;
+
+
 
     }
-    .card-title{
+
+    .card-title {
         font-size: 20px;
         text-align: center;
 
     }
+
     .card-text {
         text-align: center;
         font-size: 25px;
     }
-    .card{
-        margin:2px;
+
+    .card {
+        margin: 2px;
     }
 }
-.btn-primary{
-    justify-content: center;
+
+.btn-primary {
+    //justify-content: center;
     width: 100%;
-   
-   
-    
+
+
+
+
 }
-.btn-primary-info{
+
+.btn-primary-info {
     background-color: rgb(33, 33, 87);
     margin-top: 20px;
     margin-left: 10px;
@@ -63,43 +77,111 @@
 
 .infoPampa {
     display: flex;
-    h3{
+
+    h3 {
         padding-top: 25px;
-        padding-left: 15px;
-    }
-
-    }
- @media(min-width:360px) and (max-width:990px){
-    .cartas-imagenes-uno{
-
-    
-
-
-    .card-title {
-        font-size: 10px;
-        text-align: center;
-    
-    
-    }
-    .card-text {
-        text-align: center;
-        font-size: 10px;
-    }
-}
-.cartas-imagenes-dos{
-    .card-title {
-        font-size: 10px;
-        text-align: center;
-    
-    
-    }
-    .card-text {
-        text-align: center;
-        font-size: 10px;
+        padding-left: 20px;
     }
 
 }
 
-} 
+@media(min-width:500px) and (max-width:990px) {
+    .cartas-imagenes-uno {
+        .card-title {
+            font-size: 10px;
+            text-align: center;
 
 
+        }
+
+        .card-text {
+            text-align: center;
+            font-size: 10px;
+            font-weight: 900;
+        }
+
+        .btn-primary {
+            font-size: 10px;
+        }
+
+    }
+
+    .cartas-imagenes-dos {
+        .card-title {
+            font-size: 10px;
+            text-align: center;
+
+
+        }
+
+        .card-text {
+            text-align: center;
+            font-size: 10px;
+            font-weight: 900;
+        }
+
+        .btn-primary {
+            font-size: 10px;
+        }
+
+
+
+
+
+    }
+}
+
+
+@media(min-width:360px) and (max-width:537px) {
+    .cartas-imagenes-uno {
+        .card-title {
+            font-size: 5px;
+            text-align: center;
+            font-weight: 900;
+
+
+        }
+
+        .card-text {
+            text-align: center;
+            font-size: 5px;
+            height: 50px;
+        }
+
+        .btn-primary {
+            height: 30px;
+            width: 100%;
+            margin: 0;
+            font-size: 5px;
+        }
+
+    }
+
+    .cartas-imagenes-dos {
+        .card-title {
+            font-size: 5px;
+            text-align: center;
+            font-weight: 900;
+
+
+        }
+
+        .card-text {
+            text-align: center;
+            font-size: 5px;
+        }
+
+        .btn-primary {
+            height: 30px;
+            width: 100%;
+            margin: 0;
+            font-size: 5px;
+        }
+
+    }
+
+
+
+
+
+}

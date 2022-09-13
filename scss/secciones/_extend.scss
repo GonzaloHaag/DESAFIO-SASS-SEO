@@ -1,13 +1,19 @@
 //EXTEND
-%estiloPrincipal{
+%estiloPrincipal {
 
-background-color: green;
-    color:white;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    font-weight: 1000;
+    text-align: end;
+    padding-top: 20px;
+    padding-right: 450px;
 }
+
 //MIXIN
-@mixin estiloTexto ($size,$color){
+@mixin estiloTexto ($size, $color) {
     font-weight: 900;
     font-style: italic;
+    font-size: $size;
+    color: $color;
 }

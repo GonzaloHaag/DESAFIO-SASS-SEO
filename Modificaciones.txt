@@ -1,5 +1,5 @@
 EXTEND:
-Implemente un extend y lo agregue al h2 de la pagina de contacto.
+Implemente un extend y lo agregue al h2 de la pagina nosotros.
 MIXIN:
 Implemente un mixin y se lo aplique a los parrafos de la pagina nosotros.
 

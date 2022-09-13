@@ -13,14 +13,17 @@ a {
   /*Le saco el subrayado a las etiquetas que estan en mi navbar*/ }
 
 /*Comienzo header*/
-.main .h2-contacto {
-  background-color: green;
-  color: white;
+.quienesSomos {
+  color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center; }
+  text-align: center;
+  font-weight: 1000;
+  text-align: end;
+  padding-top: 20px;
+  padding-right: 450px; }
 
 .color-nav-boostrap {
-  background-image: linear-gradient(to left, #bcd6bc, #70ac70); }
+  background-image: linear-gradient(to left, #a6e4a6, #70ac70); }
   .color-nav-boostrap .navbar-brand img {
     width: 150px;
     height: 150px; }
@@ -31,7 +34,8 @@ a {
     margin: 15px auto;
     font-size: 20px; }
     .color-nav-boostrap .navbar-nav li:hover {
-      background-color: azure; }
+      font-weight: 900;
+      /*Al pasarle el click arriba se agrandara el item*/ }
 
 /*Importare la seccion de header*/
 .body {
@@ -59,18 +63,18 @@ a {
   font-size: 2em;
   transition: 0.5s;
   width: 300px;
-  margin: 0 auto; }
+  margin: 10px auto; }
   .destacados:hover {
     background-color: bisque;
     transform: translateX(250px) rotate(360deg) skew(35deg) scale(2); }
 
 .productos-destacados {
   justify-content: center;
-  margin: 20px auto;
-  width: 70vw; }
+  margin: 0 auto;
+  width: 90vw; }
   .productos-destacados img {
-    width: 300px;
-    margin: 10px;
+    width: 23%;
+    margin: 5px;
     height: 330px; }
     .productos-destacados img:hover {
       transform: rotate(-5deg);
@@ -84,59 +88,120 @@ a {
     padding: 10px;
     color: white; }
 
-.dos-imagenes {
+.dos-videos {
   width: 60vw;
   justify-content: center;
   align-items: center;
-  margin-left: 300px;
-  margin-bottom: 5px; }
-  .dos-imagenes img {
+  box-shadow: 5px 8px 12px black;
+  /* margin-left: 300px;
+    margin-bottom: 5px;*/
+  margin: 0 auto; }
+  .dos-videos h4 {
+    background-color: azure;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3px;
+    box-shadow: 5px 8px 12px black; }
+  .dos-videos iframe {
     width: 100%;
     justify-content: center;
     height: 700px;
     margin-top: 5px; }
 
-@media (min-width: 360px) and (max-width: 990px) {
-  /*Esto va desde los 360px hasta los 990px*/
+.css-selector-degradee {
+  /*Que esta dentro de un figure*/
+  background: linear-gradient(270deg, red, blue, orange, #101110);
+  background-size: 800% 800%;
+  height: 4px;
+  animation: AnimationName 5s ease infinite;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -o-animation: AnimationName 5s ease infinite; }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@media (min-width: 500px) and (max-width: 990px) {
+  /*Esto va desde los 500px hasta los 990px*/
   .color-nav-boostrap {
     background-image: linear-gradient(to left, #bcd6bc, #70ac70); }
   .imagenes-index {
     display: flex;
     justify-content: center; }
     .imagenes-index img {
-      width: 130px;
-      height: 130px;
+      width: 50vw;
+      height: 250px;
       margin: 20px; }
   .productos-destacados {
-    flex-wrap: wrap;
-    width: 90vw; }
+    width: 90vw;
+    flex-wrap: wrap; }
     .productos-destacados img {
-      width: 100%;
+      width: 40%;
       /*El 100% del contenedor*/
-      margin-top: 15px;
+      margin: 15px;
       height: 330px; }
-  .dos-imagenes {
-    width: 50vw;
-    justify-content: center;
-    margin-left: 100px; }
-    .dos-imagenes img {
+  .dos-videos {
+    width: 80vw;
+    justify-content: center; }
+    .dos-videos iframe {
       width: 100%;
       justify-content: center;
       margin-top: 15px;
       height: 300px; } }
 
+@media (min-width: 360px) and (max-width: 500px) {
+  .imagenes-index img {
+    width: 100px;
+    height: 100px; }
+  .productos-destacados img {
+    width: 95%; }
+  .dos-videos iframe {
+    width: 100%;
+    height: 60%;
+    margin: 0; }
+  .dos-videos h4 {
+    width: 100%; } }
+
 /*Main-index*/
 .main {
   background-color: #9dce9d; }
-  .main .h2-contacto {
-    width: 700px;
-    margin: 0px auto;
-    padding: 20px; }
   .main .formulario {
+    background-image: linear-gradient(to left, #076614, #2ba31b);
     text-align: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 60vw;
+    margin: 10px auto;
+    box-shadow: 5px 8px 12px black; }
     .main .formulario .input-formulario {
-      border-radius: 15px;
       box-shadow: 5px 8px 12px black;
       width: 30vw;
       margin: 30px;
@@ -155,7 +220,7 @@ a {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: black; }
 
-@media (min-width: 360px) and (max-width: 990px) {
+@media (min-width: 620px) and (max-width: 990px) {
   .main .h2-contacto {
     text-align: center;
     width: 300px;
@@ -163,18 +228,23 @@ a {
     padding: 20px; }
   .main input[type=text]::placeholder {
     justify-content: center;
-    font-size: 10px; }
+    font-size: 20px; }
   .main input[type=number]::placeholder {
     text-align: center;
-    font-size: 10px; }
+    font-size: 20px; }
   .main input[type=email]::placeholder {
     text-align: center;
+    font-size: 20px; } }
+
+@media (min-width: 360px) and (max-width: 620px) {
+  main input[type=text]::placeholder {
+    justify-content: center;
     font-size: 10px; } }
 
 /*Contacto*/
 .footer {
   width: 100%;
-  background-image: linear-gradient(to left, #bcd6bc, #70ac70); }
+  background-image: linear-gradient(to left, #a6e4a6, #70ac70); }
   .footer .grupo-1 {
     width: 100%;
     max-width: 1200px;
@@ -281,7 +351,8 @@ a {
 .cartas-imagenes-dos {
   display: flex;
   justify-content: center;
-  padding-bottom: 15px; }
+  margin: 15px;
+  padding: 15px; }
   .cartas-imagenes-dos img {
     width: 100%;
     height: 100%; }
@@ -295,7 +366,6 @@ a {
     margin: 2px; }
 
 .btn-primary {
-  justify-content: center;
   width: 100%; }
 
 .btn-primary-info {
@@ -308,29 +378,56 @@ a {
   display: flex; }
   .infoPampa h3 {
     padding-top: 25px;
-    padding-left: 15px; }
+    padding-left: 20px; }
 
-@media (min-width: 360px) and (max-width: 990px) {
+@media (min-width: 500px) and (max-width: 990px) {
   .cartas-imagenes-uno .card-title {
     font-size: 10px;
     text-align: center; }
   .cartas-imagenes-uno .card-text {
     text-align: center;
+    font-size: 10px;
+    font-weight: 900; }
+  .cartas-imagenes-uno .btn-primary {
     font-size: 10px; }
   .cartas-imagenes-dos .card-title {
     font-size: 10px;
     text-align: center; }
   .cartas-imagenes-dos .card-text {
     text-align: center;
+    font-size: 10px;
+    font-weight: 900; }
+  .cartas-imagenes-dos .btn-primary {
     font-size: 10px; } }
 
-/*Matespampa*/
-.quienesSomos {
-  text-align: end;
-  padding-top: 20px;
-  padding-right: 450px;
-  font-size: 45px; }
+@media (min-width: 360px) and (max-width: 537px) {
+  .cartas-imagenes-uno .card-title {
+    font-size: 5px;
+    text-align: center;
+    font-weight: 900; }
+  .cartas-imagenes-uno .card-text {
+    text-align: center;
+    font-size: 5px;
+    height: 50px; }
+  .cartas-imagenes-uno .btn-primary {
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    font-size: 5px; }
+  .cartas-imagenes-dos .card-title {
+    font-size: 5px;
+    text-align: center;
+    font-weight: 900; }
+  .cartas-imagenes-dos .card-text {
+    text-align: center;
+    font-size: 5px; }
+  .cartas-imagenes-dos .btn-primary {
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    font-size: 5px; } }
 
+/*Matespampa*/
 .imagenes-parrafos {
   display: flex;
   justify-content: start; }
@@ -340,11 +437,15 @@ a {
     margin: 0 auto; }
   .imagenes-parrafos .parrafos {
     padding: 50px;
+    width: 100%;
     text-align: center;
     justify-content: center;
-    font-size: 35px;
     font-weight: 900;
-    font-style: italic; }
+    font-style: italic;
+    font-size: 30px;
+    color: black; }
+    .imagenes-parrafos .parrafos p {
+      width: 100%; }
 
 @media (min-width: 360px) and (max-width: 990px) {
   .quienesSomos {
@@ -363,8 +464,7 @@ a {
     padding: 15px;
     text-align: center;
     justify-content: center;
-    font-weight: 900;
-    font-style: italic; } }
+    font-size: 5px; } }
 
 @media (min-width: 990px) {
   .quienesSomos {
@@ -383,8 +483,7 @@ a {
     padding: 15px;
     text-align: center;
     justify-content: center;
-    font-weight: 900;
-    font-style: italic; } }
+    font-size: 20px; } }
 
 /*Nosotros*/
 .h1-diseños {
