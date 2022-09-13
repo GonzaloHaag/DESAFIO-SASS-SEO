@@ -77,8 +77,8 @@ a {
     margin: 5px;
     height: 330px; }
     .productos-destacados img:hover {
-      transform: rotate(-5deg);
-      scale: 1.2; }
+      scale: 1.2;
+      transition: all 300ms; }
 
 .boton-productos {
   text-align: center;
@@ -436,14 +436,14 @@ a {
     height: 500px;
     margin: 0 auto; }
   .imagenes-parrafos .parrafos {
-    padding: 50px;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
     font-weight: 900;
     font-style: italic;
     font-size: 30px;
-    color: black; }
+    color: black;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    justify-content: center; }
     .imagenes-parrafos .parrafos p {
       width: 100%; }
 

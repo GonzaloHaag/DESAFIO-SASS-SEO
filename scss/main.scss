@@ -19,8 +19,8 @@ a {
 }
 
 /*Comienzo header*/
-@import './secciones/variables'; //Las variables se importan arriba de todo
-@import './secciones/extend';
+@import './variables/variables'; //Las variables se importan arriba de todo
+@import './variables/extend';
 @import './secciones/header';
 /*Importare la seccion de header*/
 @import './secciones/main-index';
