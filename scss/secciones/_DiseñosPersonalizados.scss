@@ -1,5 +1,6 @@
 .h1-diseños {
     text-align: center;
+    margin-top:15px;
 
 }
 
@@ -15,6 +16,20 @@
         justify-content: center;
     }
 
+}
+.CARROUSEL-PADRE{
+    width: 40%;
+}
+.ancho-carousel{
+    width: 100%;
+}
+.carousel-control-prev-icon{
+    background-color: blue;
+
+}
+.carousel-control-next-icon{
+    //background-color: blue;
+    background-color: blue;
 }
 
 @media(min-width:360px) and (max-width:990px) {

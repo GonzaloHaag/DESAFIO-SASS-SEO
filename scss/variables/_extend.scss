@@ -10,14 +10,9 @@
     padding-right: 450px;
 }
 
-//MIXIN
-@mixin estiloTexto ($size, $color) {
-    font-weight: 900;
-    font-style: italic;
-    font-size: $size;
-    color: $color;
-    padding: 50px;
-    width: 100%;
-    text-align: center;
+%estiloCartas{
+    display: flex;
     justify-content: center;
+    margin: 15px;
+    padding: 15px;
 }

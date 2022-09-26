@@ -2,12 +2,13 @@
     background-color: rgb(157, 206, 157);
 
     .formulario {
-        background-image: linear-gradient(to left, #076614, rgb(43, 163, 27));
+        background-image: linear-gradient(to left, #239131, rgb(43, 163, 27));
         text-align: center;
         padding-top: 20px;
         width: 60vw;
         margin: 10px auto;
         box-shadow: $box-shadow;
+       border-radius: 20%;
 
         .input-formulario {
             box-shadow: $box-shadow;

@@ -1,9 +1,9 @@
-.cartas-imagenes-uno {
+
+.cartas-imagenes-bolsos-uno {
     
     @extend %estiloCartas;
 
     img {
-       
         width: 100%;
         height: 100%;
 
@@ -22,7 +22,7 @@
 
     .card {
         margin: 2px;
-        
+        width: 350px;
         align-items: center;
         &:hover{
             filter: grayscale(0.5);
@@ -33,8 +33,7 @@
 
 }
 
-.cartas-imagenes-dos {
-    
+.cartas-imagenes-bolsos-dos {
     @extend %estiloCartas;
 
     img {
@@ -55,9 +54,12 @@
     }
 
     .card {
+        
         margin: 2px;
+        width: 350px;
+        align-items: center;
         &:hover{
-            filter: grayscale(2);
+            filter: grayscale(0.5);
             cursor: pointer;
             scale: 1.1;
         }
@@ -67,18 +69,11 @@
 .btn-primary {
     //justify-content: center;
     width: 100%;
-    &:hover{
-        filter: grayscale(0.5);
-        cursor: pointer;
-        scale: 1.1;
-    }
 
 
 
 
 }
-
-
 @media(min-width:537px) and (max-width:990px) {
     .cartas-imagenes-uno {
         
@@ -133,7 +128,7 @@
 
 
 @media(min-width:360px) and (max-width:537px) {
-    .cartas-imagenes-uno {
+    .cartas-imagenes-bolsos-uno {
         
         flex-wrap: wrap;
         .card{
@@ -168,7 +163,7 @@
 
     }
 
-    .cartas-imagenes-dos {
+    .cartas-imagenes-bolsos-dos {
         flex-wrap: wrap;
         .card{
             width: 100%;

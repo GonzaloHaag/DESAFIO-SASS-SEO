@@ -13,6 +13,8 @@ Nosotros:
  <meta name="keywords" content="Nosotros,informacion,conocenos,confianza">
  MatesPampa:
   <meta name="keywords" content="mates,pampa,ecologico,naturaleza" />
+  BolsosMateros:
+   <meta name="keywords" content="Bolsos,mate,comodidad,viaje">
   DiseñosPersonalizados:
    <meta name="keywords" content="Diseños,personalizados,eleccion,personal">
 
@@ -30,6 +32,9 @@ Nosotros:
   <meta
       name="description"
       content="El pampa es un mate ecológico porque no tiene derivados animales y está hecho 100% a partir de materiales reciclables. En su interior presenta un plástico aséptico, por lo que no genera hongos y es súper fácil de lavar . En su exterior éste material flexible logra imitar al típico mate de cuero, además de que lo hace más térmico y resistente que cualquier otro mate>
+      BolsosMateros:
+       <meta name="description"
+    content="Te mostramos nuestros bolsos materos, que te pueden brindar una comodidad increible a la hora de llevar tu set de mate">
 
   DiseñosPersonalizados:
   <meta name="description" content="Si alguno de nuestros mates no te convence, pedinos el tuyo a tu gusto,sin compromiso">
@@ -41,16 +46,20 @@ Nosotros:
 
  TITLE:
 Index:
-<title>ElPochoMates | INICIO </title>
+<title> INICIO </title>
 Contacto:
- <title>ElPochoMates | CONTACTO </title>
+ <title> CONTACTO </title>
  Nosotros:
-  <title>ElPochoMates | NOSOTROS 
+  <title> NOSOTROS 
     </title>
 MatesPampa:
-<title>ElPochoMates | MatesPampa</title>
+<title>MatesPampa</title>
+BolsosMateros:
+ <title>Bolsos Materos
+  </title>
+
 DiseñosPersonalizados:
-<title>ElPochoMates | diseñosPersonalizados</title>
+<title>diseñosPersonalizados</title>
   
 
 

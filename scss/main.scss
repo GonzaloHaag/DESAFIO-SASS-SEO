@@ -14,25 +14,19 @@
 a {
     text-decoration: none;
     list-style: none;
-    /*Le saco el subrayado a las etiquetas que estan en mi navbar*/
+
 
 }
 
-/*Comienzo header*/
+
 @import './variables/variables'; //Las variables se importan arriba de todo
+@import './variables/mixin';
 @import './variables/extend';
 @import './secciones/header';
-/*Importare la seccion de header*/
 @import './secciones/main-index';
-/*Main-index*/
 @import './secciones/contacto';
-/*Contacto*/
 @import './secciones/footer';
-/*Footer*/
 @import './secciones/matesPampa';
-/*Matespampa*/
 @import './secciones/nosotros';
-/*Nosotros*/
+@import './secciones/BolsosMateros';
 @import './secciones/DiseñosPersonalizados';
-/*Diseños personalizados*/
-/*Responsive design*/

@@ -9,10 +9,8 @@
 
 a {
   text-decoration: none;
-  list-style: none;
-  /*Le saco el subrayado a las etiquetas que estan en mi navbar*/ }
+  list-style: none; }
 
-/*Comienzo header*/
 .quienesSomos {
   color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,6 +19,12 @@ a {
   text-align: end;
   padding-top: 20px;
   padding-right: 450px; }
+
+.cartas-imagenes-uno, .cartas-imagenes-dos, .cartas-imagenes-bolsos-uno, .cartas-imagenes-bolsos-dos {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  padding: 15px; }
 
 .color-nav-boostrap {
   background-image: linear-gradient(to left, #a6e4a6, #70ac70); }
@@ -37,7 +41,6 @@ a {
       font-weight: 900;
       /*Al pasarle el click arriba se agrandara el item*/ }
 
-/*Importare la seccion de header*/
 .body {
   display: flex;
   flex-direction: column;
@@ -62,11 +65,14 @@ a {
   text-align: center;
   font-size: 2em;
   transition: 0.5s;
-  width: 300px;
-  margin: 10px auto; }
-  .destacados:hover {
-    background-color: bisque;
-    transform: translateX(250px) rotate(360deg) skew(35deg) scale(2); }
+  margin: 10px auto;
+  font-family: monospace;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 10ch;
+  animation: typing 2s steps(10), blink 1s infinite step-end alternate;
+  overflow: hidden; }
 
 .productos-destacados {
   justify-content: center;
@@ -78,7 +84,8 @@ a {
     height: 330px; }
     .productos-destacados img:hover {
       scale: 1.2;
-      transition: all 300ms; }
+      transition: all 300ms;
+      cursor: pointer; }
 
 .boton-productos {
   text-align: center;
@@ -93,11 +100,8 @@ a {
   justify-content: center;
   align-items: center;
   box-shadow: 5px 8px 12px black;
-  /* margin-left: 300px;
-    margin-bottom: 5px;*/
   margin: 0 auto; }
   .dos-videos h4 {
-    background-color: azure;
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -117,6 +121,14 @@ a {
   animation: AnimationName 5s ease infinite;
   -webkit-animation: AnimationName 5s ease infinite;
   -o-animation: AnimationName 5s ease infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border: transparent; } }
 
 @keyframes AnimationName {
   0% {
@@ -151,7 +163,6 @@ a {
     background-position: 0% 50%; } }
 
 @media (min-width: 500px) and (max-width: 990px) {
-  /*Esto va desde los 500px hasta los 990px*/
   .color-nav-boostrap {
     background-image: linear-gradient(to left, #bcd6bc, #70ac70); }
   .imagenes-index {
@@ -166,7 +177,6 @@ a {
     flex-wrap: wrap; }
     .productos-destacados img {
       width: 40%;
-      /*El 100% del contenedor*/
       margin: 15px;
       height: 330px; }
   .dos-videos {
@@ -191,16 +201,16 @@ a {
   .dos-videos h4 {
     width: 100%; } }
 
-/*Main-index*/
 .main {
   background-color: #9dce9d; }
   .main .formulario {
-    background-image: linear-gradient(to left, #076614, #2ba31b);
+    background-image: linear-gradient(to left, #239131, #2ba31b);
     text-align: center;
     padding-top: 20px;
     width: 60vw;
     margin: 10px auto;
-    box-shadow: 5px 8px 12px black; }
+    box-shadow: 5px 8px 12px black;
+    border-radius: 20%; }
     .main .formulario .input-formulario {
       box-shadow: 5px 8px 12px black;
       width: 30vw;
@@ -241,7 +251,6 @@ a {
     justify-content: center;
     font-size: 10px; } }
 
-/*Contacto*/
 .footer {
   width: 100%;
   background-image: linear-gradient(to left, #a6e4a6, #70ac70); }
@@ -262,7 +271,7 @@ a {
       .footer .grupo-1 .caja figure img {
         width: 250px; }
     .footer .grupo-1 .caja h2 {
-      color: white;
+      color: black;
       margin-bottom: 25px;
       font-size: 20px; }
     .footer .grupo-1 .caja p {
@@ -330,57 +339,55 @@ a {
         margin-left: 35px;
         transform: translateY(-50px); } }
 
-/*Footer*/
-.cartas-imagenes-uno {
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-  padding: 15px; }
-  .cartas-imagenes-uno img {
-    width: 100%;
-    height: 100%; }
-  .cartas-imagenes-uno .card-title {
-    font-size: 20px;
-    text-align: center; }
-  .cartas-imagenes-uno .card-text {
-    text-align: center;
-    font-size: 25px; }
-  .cartas-imagenes-uno .card {
-    margin: 2px; }
+.cartas-imagenes-uno img {
+  width: 100%;
+  height: 100%; }
 
-.cartas-imagenes-dos {
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-  padding: 15px; }
-  .cartas-imagenes-dos img {
-    width: 100%;
-    height: 100%; }
-  .cartas-imagenes-dos .card-title {
-    font-size: 20px;
-    text-align: center; }
-  .cartas-imagenes-dos .card-text {
-    text-align: center;
-    font-size: 25px; }
-  .cartas-imagenes-dos .card {
-    margin: 2px; }
+.cartas-imagenes-uno .card-title {
+  font-size: 20px;
+  text-align: center; }
+
+.cartas-imagenes-uno .card-text {
+  text-align: center;
+  font-size: 25px; }
+
+.cartas-imagenes-uno .card {
+  margin: 2px;
+  align-items: center; }
+  .cartas-imagenes-uno .card:hover {
+    filter: grayscale(0.5);
+    cursor: pointer;
+    scale: 1.1; }
+
+.cartas-imagenes-dos img {
+  width: 100%;
+  height: 100%; }
+
+.cartas-imagenes-dos .card-title {
+  font-size: 20px;
+  text-align: center; }
+
+.cartas-imagenes-dos .card-text {
+  text-align: center;
+  font-size: 25px; }
+
+.cartas-imagenes-dos .card {
+  margin: 2px; }
+  .cartas-imagenes-dos .card:hover {
+    filter: grayscale(2);
+    cursor: pointer;
+    scale: 1.1; }
 
 .btn-primary {
   width: 100%; }
+  .btn-primary:hover {
+    filter: grayscale(0.5);
+    cursor: pointer;
+    scale: 1.1; }
 
-.btn-primary-info {
-  background-color: #212157;
-  margin-top: 20px;
-  margin-left: 10px;
-  color: white; }
-
-.infoPampa {
-  display: flex; }
-  .infoPampa h3 {
-    padding-top: 25px;
-    padding-left: 20px; }
-
-@media (min-width: 500px) and (max-width: 990px) {
+@media (min-width: 537px) and (max-width: 990px) {
+  .cartas-imagenes-uno .card {
+    width: 100%; }
   .cartas-imagenes-uno .card-title {
     font-size: 10px;
     text-align: center; }
@@ -401,33 +408,44 @@ a {
     font-size: 10px; } }
 
 @media (min-width: 360px) and (max-width: 537px) {
-  .cartas-imagenes-uno .card-title {
-    font-size: 5px;
-    text-align: center;
-    font-weight: 900; }
-  .cartas-imagenes-uno .card-text {
-    text-align: center;
-    font-size: 5px;
-    height: 50px; }
-  .cartas-imagenes-uno .btn-primary {
-    height: 30px;
-    width: 100%;
-    margin: 0;
-    font-size: 5px; }
-  .cartas-imagenes-dos .card-title {
-    font-size: 5px;
-    text-align: center;
-    font-weight: 900; }
-  .cartas-imagenes-dos .card-text {
-    text-align: center;
-    font-size: 5px; }
-  .cartas-imagenes-dos .btn-primary {
-    height: 30px;
-    width: 100%;
-    margin: 0;
-    font-size: 5px; } }
+  .cartas-imagenes-uno {
+    flex-wrap: wrap; }
+    .cartas-imagenes-uno .card {
+      width: 100%; }
+      .cartas-imagenes-uno .card:hover {
+        scale: 1; }
+    .cartas-imagenes-uno .card-title {
+      font-size: 15px;
+      text-align: center;
+      font-weight: 900; }
+    .cartas-imagenes-uno .card-text {
+      text-align: center;
+      font-size: 15px;
+      height: 50px; }
+    .cartas-imagenes-uno .btn-primary {
+      height: 30px;
+      width: 100%;
+      margin: 0;
+      font-size: 10px; }
+  .cartas-imagenes-dos {
+    flex-wrap: wrap; }
+    .cartas-imagenes-dos .card {
+      width: 100%; }
+      .cartas-imagenes-dos .card:hover {
+        scale: 1; }
+    .cartas-imagenes-dos .card-title {
+      font-size: 15px;
+      text-align: center;
+      font-weight: 900; }
+    .cartas-imagenes-dos .card-text {
+      text-align: center;
+      font-size: 15px; }
+    .cartas-imagenes-dos .btn-primary {
+      height: 30px;
+      width: 100%;
+      margin: 0;
+      font-size: 10px; } }
 
-/*Matespampa*/
 .imagenes-parrafos {
   display: flex;
   justify-content: start; }
@@ -457,8 +475,8 @@ a {
     justify-content: start;
     flex-direction: column; }
     .imagenes-parrafos img {
-      width: 700px;
-      height: 500px;
+      width: 500px;
+      height: 300px;
       padding-left: 15px; }
   .parrafos {
     padding: 15px;
@@ -485,9 +503,115 @@ a {
     justify-content: center;
     font-size: 20px; } }
 
-/*Nosotros*/
-.h1-diseños {
+.cartas-imagenes-bolsos-uno img {
+  width: 100%;
+  height: 100%; }
+
+.cartas-imagenes-bolsos-uno .card-title {
+  font-size: 20px;
   text-align: center; }
+
+.cartas-imagenes-bolsos-uno .card-text {
+  text-align: center;
+  font-size: 25px; }
+
+.cartas-imagenes-bolsos-uno .card {
+  margin: 2px;
+  width: 350px;
+  align-items: center; }
+  .cartas-imagenes-bolsos-uno .card:hover {
+    filter: grayscale(0.5);
+    cursor: pointer;
+    scale: 1.1; }
+
+.cartas-imagenes-bolsos-dos img {
+  width: 100%;
+  height: 100%; }
+
+.cartas-imagenes-bolsos-dos .card-title {
+  font-size: 20px;
+  text-align: center; }
+
+.cartas-imagenes-bolsos-dos .card-text {
+  text-align: center;
+  font-size: 25px; }
+
+.cartas-imagenes-bolsos-dos .card {
+  margin: 2px;
+  width: 350px;
+  align-items: center; }
+  .cartas-imagenes-bolsos-dos .card:hover {
+    filter: grayscale(0.5);
+    cursor: pointer;
+    scale: 1.1; }
+
+.btn-primary {
+  width: 100%; }
+
+@media (min-width: 537px) and (max-width: 990px) {
+  .cartas-imagenes-uno .card {
+    width: 100%; }
+  .cartas-imagenes-uno .card-title {
+    font-size: 10px;
+    text-align: center; }
+  .cartas-imagenes-uno .card-text {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 900; }
+  .cartas-imagenes-uno .btn-primary {
+    font-size: 10px; }
+  .cartas-imagenes-dos .card-title {
+    font-size: 10px;
+    text-align: center; }
+  .cartas-imagenes-dos .card-text {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 900; }
+  .cartas-imagenes-dos .btn-primary {
+    font-size: 10px; } }
+
+@media (min-width: 360px) and (max-width: 537px) {
+  .cartas-imagenes-bolsos-uno {
+    flex-wrap: wrap; }
+    .cartas-imagenes-bolsos-uno .card {
+      width: 100%; }
+      .cartas-imagenes-bolsos-uno .card:hover {
+        scale: 1; }
+    .cartas-imagenes-bolsos-uno .card-title {
+      font-size: 15px;
+      text-align: center;
+      font-weight: 900; }
+    .cartas-imagenes-bolsos-uno .card-text {
+      text-align: center;
+      font-size: 15px;
+      height: 50px; }
+    .cartas-imagenes-bolsos-uno .btn-primary {
+      height: 30px;
+      width: 100%;
+      margin: 0;
+      font-size: 10px; }
+  .cartas-imagenes-bolsos-dos {
+    flex-wrap: wrap; }
+    .cartas-imagenes-bolsos-dos .card {
+      width: 100%; }
+      .cartas-imagenes-bolsos-dos .card:hover {
+        scale: 1; }
+    .cartas-imagenes-bolsos-dos .card-title {
+      font-size: 15px;
+      text-align: center;
+      font-weight: 900; }
+    .cartas-imagenes-bolsos-dos .card-text {
+      text-align: center;
+      font-size: 15px; }
+    .cartas-imagenes-bolsos-dos .btn-primary {
+      height: 30px;
+      width: 100%;
+      margin: 0;
+      font-size: 10px; } }
+
+.h1-diseños {
+  text-align: center;
+  margin-top: 15px; }
 
 .diseño {
   display: flex;
@@ -498,6 +622,18 @@ a {
     padding-top: 10px;
     padding-left: 15px;
     justify-content: center; }
+
+.CARROUSEL-PADRE {
+  width: 40%; }
+
+.ancho-carousel {
+  width: 100%; }
+
+.carousel-control-prev-icon {
+  background-color: blue; }
+
+.carousel-control-next-icon {
+  background-color: blue; }
 
 @media (min-width: 360px) and (max-width: 990px) {
   .h1-diseños {
@@ -513,6 +649,3 @@ a {
       padding-right: 5px;
       justify-content: center;
       font-size: 10px; } }
-
-/*Diseños personalizados*/
-/*Responsive design*/
